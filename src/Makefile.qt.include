@@ -1,98 +1,98 @@
-# Copyright (c) 2013-2016 The Bitcoin Core developers
+# Copyright (c) 2013-2016 The Gthpcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-bin_PROGRAMS += qt/bitcoin-qt
-EXTRA_LIBRARIES += qt/libbitcoinqt.a
+bin_PROGRAMS += qt/gthpcoin-qt
+EXTRA_LIBRARIES += qt/libgthpcoinqt.a
 
-# bitcoin qt core #
+# gthpcoin qt core #
 QT_TS = \
-  qt/locale/bitcoin_af.ts \
-  qt/locale/bitcoin_af_ZA.ts \
-  qt/locale/bitcoin_ar.ts \
-  qt/locale/bitcoin_be_BY.ts \
-  qt/locale/bitcoin_bg_BG.ts \
-  qt/locale/bitcoin_bg.ts \
-  qt/locale/bitcoin_ca_ES.ts \
-  qt/locale/bitcoin_ca.ts \
-  qt/locale/bitcoin_ca@valencia.ts \
-  qt/locale/bitcoin_cs.ts \
-  qt/locale/bitcoin_cy.ts \
-  qt/locale/bitcoin_da.ts \
-  qt/locale/bitcoin_de.ts \
-  qt/locale/bitcoin_el_GR.ts \
-  qt/locale/bitcoin_el.ts \
-  qt/locale/bitcoin_en_GB.ts \
-  qt/locale/bitcoin_en.ts \
-  qt/locale/bitcoin_eo.ts \
-  qt/locale/bitcoin_es_AR.ts \
-  qt/locale/bitcoin_es_CL.ts \
-  qt/locale/bitcoin_es_CO.ts \
-  qt/locale/bitcoin_es_DO.ts \
-  qt/locale/bitcoin_es_ES.ts \
-  qt/locale/bitcoin_es_MX.ts \
-  qt/locale/bitcoin_es.ts \
-  qt/locale/bitcoin_es_UY.ts \
-  qt/locale/bitcoin_es_VE.ts \
-  qt/locale/bitcoin_et_EE.ts \
-  qt/locale/bitcoin_et.ts \
-  qt/locale/bitcoin_eu_ES.ts \
-  qt/locale/bitcoin_fa_IR.ts \
-  qt/locale/bitcoin_fa.ts \
-  qt/locale/bitcoin_fi.ts \
-  qt/locale/bitcoin_fr_CA.ts \
-  qt/locale/bitcoin_fr_FR.ts \
-  qt/locale/bitcoin_fr.ts \
-  qt/locale/bitcoin_gl.ts \
-  qt/locale/bitcoin_he.ts \
-  qt/locale/bitcoin_hi_IN.ts \
-  qt/locale/bitcoin_hr.ts \
-  qt/locale/bitcoin_hu.ts \
-  qt/locale/bitcoin_id_ID.ts \
-  qt/locale/bitcoin_it_IT.ts \
-  qt/locale/bitcoin_it.ts \
-  qt/locale/bitcoin_ja.ts \
-  qt/locale/bitcoin_ka.ts \
-  qt/locale/bitcoin_kk_KZ.ts \
-  qt/locale/bitcoin_ko_KR.ts \
-  qt/locale/bitcoin_ku_IQ.ts \
-  qt/locale/bitcoin_ky.ts \
-  qt/locale/bitcoin_la.ts \
-  qt/locale/bitcoin_lt.ts \
-  qt/locale/bitcoin_lv_LV.ts \
-  qt/locale/bitcoin_mk_MK.ts \
-  qt/locale/bitcoin_mn.ts \
-  qt/locale/bitcoin_ms_MY.ts \
-  qt/locale/bitcoin_nb.ts \
-  qt/locale/bitcoin_ne.ts \
-  qt/locale/bitcoin_nl.ts \
-  qt/locale/bitcoin_pam.ts \
-  qt/locale/bitcoin_pl.ts \
-  qt/locale/bitcoin_pt_BR.ts \
-  qt/locale/bitcoin_pt_PT.ts \
-  qt/locale/bitcoin_ro_RO.ts \
-  qt/locale/bitcoin_ro.ts \
-  qt/locale/bitcoin_ru_RU.ts \
-  qt/locale/bitcoin_ru.ts \
-  qt/locale/bitcoin_sk.ts \
-  qt/locale/bitcoin_sl_SI.ts \
-  qt/locale/bitcoin_sq.ts \
-  qt/locale/bitcoin_sr@latin.ts \
-  qt/locale/bitcoin_sr.ts \
-  qt/locale/bitcoin_sv.ts \
-  qt/locale/bitcoin_ta.ts \
-  qt/locale/bitcoin_th_TH.ts \
-  qt/locale/bitcoin_tr_TR.ts \
-  qt/locale/bitcoin_tr.ts \
-  qt/locale/bitcoin_uk.ts \
-  qt/locale/bitcoin_ur_PK.ts \
-  qt/locale/bitcoin_uz@Cyrl.ts \
-  qt/locale/bitcoin_vi.ts \
-  qt/locale/bitcoin_vi_VN.ts \
-  qt/locale/bitcoin_zh_CN.ts \
-  qt/locale/bitcoin_zh_HK.ts \
-  qt/locale/bitcoin_zh.ts \
-  qt/locale/bitcoin_zh_TW.ts
+  qt/locale/gthpcoin_af.ts \
+  qt/locale/gthpcoin_af_ZA.ts \
+  qt/locale/gthpcoin_ar.ts \
+  qt/locale/gthpcoin_be_BY.ts \
+  qt/locale/gthpcoin_bg_BG.ts \
+  qt/locale/gthpcoin_bg.ts \
+  qt/locale/gthpcoin_ca_ES.ts \
+  qt/locale/gthpcoin_ca.ts \
+  qt/locale/gthpcoin_ca@valencia.ts \
+  qt/locale/gthpcoin_cs.ts \
+  qt/locale/gthpcoin_cy.ts \
+  qt/locale/gthpcoin_da.ts \
+  qt/locale/gthpcoin_de.ts \
+  qt/locale/gthpcoin_el_GR.ts \
+  qt/locale/gthpcoin_el.ts \
+  qt/locale/gthpcoin_en_GB.ts \
+  qt/locale/gthpcoin_en.ts \
+  qt/locale/gthpcoin_eo.ts \
+  qt/locale/gthpcoin_es_AR.ts \
+  qt/locale/gthpcoin_es_CL.ts \
+  qt/locale/gthpcoin_es_CO.ts \
+  qt/locale/gthpcoin_es_DO.ts \
+  qt/locale/gthpcoin_es_ES.ts \
+  qt/locale/gthpcoin_es_MX.ts \
+  qt/locale/gthpcoin_es.ts \
+  qt/locale/gthpcoin_es_UY.ts \
+  qt/locale/gthpcoin_es_VE.ts \
+  qt/locale/gthpcoin_et_EE.ts \
+  qt/locale/gthpcoin_et.ts \
+  qt/locale/gthpcoin_eu_ES.ts \
+  qt/locale/gthpcoin_fa_IR.ts \
+  qt/locale/gthpcoin_fa.ts \
+  qt/locale/gthpcoin_fi.ts \
+  qt/locale/gthpcoin_fr_CA.ts \
+  qt/locale/gthpcoin_fr_FR.ts \
+  qt/locale/gthpcoin_fr.ts \
+  qt/locale/gthpcoin_gl.ts \
+  qt/locale/gthpcoin_he.ts \
+  qt/locale/gthpcoin_hi_IN.ts \
+  qt/locale/gthpcoin_hr.ts \
+  qt/locale/gthpcoin_hu.ts \
+  qt/locale/gthpcoin_id_ID.ts \
+  qt/locale/gthpcoin_it_IT.ts \
+  qt/locale/gthpcoin_it.ts \
+  qt/locale/gthpcoin_ja.ts \
+  qt/locale/gthpcoin_ka.ts \
+  qt/locale/gthpcoin_kk_KZ.ts \
+  qt/locale/gthpcoin_ko_KR.ts \
+  qt/locale/gthpcoin_ku_IQ.ts \
+  qt/locale/gthpcoin_ky.ts \
+  qt/locale/gthpcoin_la.ts \
+  qt/locale/gthpcoin_lt.ts \
+  qt/locale/gthpcoin_lv_LV.ts \
+  qt/locale/gthpcoin_mk_MK.ts \
+  qt/locale/gthpcoin_mn.ts \
+  qt/locale/gthpcoin_ms_MY.ts \
+  qt/locale/gthpcoin_nb.ts \
+  qt/locale/gthpcoin_ne.ts \
+  qt/locale/gthpcoin_nl.ts \
+  qt/locale/gthpcoin_pam.ts \
+  qt/locale/gthpcoin_pl.ts \
+  qt/locale/gthpcoin_pt_BR.ts \
+  qt/locale/gthpcoin_pt_PT.ts \
+  qt/locale/gthpcoin_ro_RO.ts \
+  qt/locale/gthpcoin_ro.ts \
+  qt/locale/gthpcoin_ru_RU.ts \
+  qt/locale/gthpcoin_ru.ts \
+  qt/locale/gthpcoin_sk.ts \
+  qt/locale/gthpcoin_sl_SI.ts \
+  qt/locale/gthpcoin_sq.ts \
+  qt/locale/gthpcoin_sr@latin.ts \
+  qt/locale/gthpcoin_sr.ts \
+  qt/locale/gthpcoin_sv.ts \
+  qt/locale/gthpcoin_ta.ts \
+  qt/locale/gthpcoin_th_TH.ts \
+  qt/locale/gthpcoin_tr_TR.ts \
+  qt/locale/gthpcoin_tr.ts \
+  qt/locale/gthpcoin_uk.ts \
+  qt/locale/gthpcoin_ur_PK.ts \
+  qt/locale/gthpcoin_uz@Cyrl.ts \
+  qt/locale/gthpcoin_vi.ts \
+  qt/locale/gthpcoin_vi_VN.ts \
+  qt/locale/gthpcoin_zh_CN.ts \
+  qt/locale/gthpcoin_zh_HK.ts \
+  qt/locale/gthpcoin_zh.ts \
+  qt/locale/gthpcoin_zh_TW.ts
 
 QT_FORMS_UI = \
   qt/forms/addressbookpage.ui \
@@ -118,11 +118,11 @@ QT_MOC_CPP = \
   qt/moc_addresstablemodel.cpp \
   qt/moc_askpassphrasedialog.cpp \
   qt/moc_bantablemodel.cpp \
-  qt/moc_bitcoinaddressvalidator.cpp \
-  qt/moc_bitcoinamountfield.cpp \
-  qt/moc_bitcoin.cpp \
-  qt/moc_bitcoingui.cpp \
-  qt/moc_bitcoinunits.cpp \
+  qt/moc_gthpcoinaddressvalidator.cpp \
+  qt/moc_gthpcoinamountfield.cpp \
+  qt/moc_gthpcoin.cpp \
+  qt/moc_gthpcoingui.cpp \
+  qt/moc_gthpcoinunits.cpp \
   qt/moc_clientmodel.cpp \
   qt/moc_coincontroldialog.cpp \
   qt/moc_coincontroltreewidget.cpp \
@@ -163,21 +163,21 @@ QT_MOC_CPP = \
   qt/moc_walletmodel.cpp \
   qt/moc_walletview.cpp
 
-BITCOIN_MM = \
+GTHPCOIN_MM = \
   qt/macdockiconhandler.mm \
   qt/macnotificationhandler.mm \
   qt/macos_appnap.mm
 
 QT_MOC = \
-  qt/bitcoinamountfield.moc \
+  qt/gthpcoinamountfield.moc \
   qt/intro.moc \
   qt/overviewpage.moc \
   qt/rpcconsole.moc
 
-QT_QRC_CPP = qt/qrc_bitcoin.cpp
-QT_QRC = qt/bitcoin.qrc
-QT_QRC_LOCALE_CPP = qt/qrc_bitcoin_locale.cpp
-QT_QRC_LOCALE = qt/bitcoin_locale.qrc
+QT_QRC_CPP = qt/qrc_gthpcoin.cpp
+QT_QRC = qt/gthpcoin.qrc
+QT_QRC_LOCALE_CPP = qt/qrc_gthpcoin_locale.cpp
+QT_QRC_LOCALE = qt/gthpcoin_locale.qrc
 
 if ENABLE_BIP70
 PROTOBUF_CC = qt/paymentrequest.pb.cc
@@ -189,16 +189,16 @@ PROTOBUF_H =
 PROTOBUF_PROTO =
 endif
 
-BITCOIN_QT_H = \
+GTHPCOIN_QT_H = \
   qt/addressbookpage.h \
   qt/addresstablemodel.h \
   qt/askpassphrasedialog.h \
   qt/bantablemodel.h \
-  qt/bitcoinaddressvalidator.h \
-  qt/bitcoinamountfield.h \
-  qt/bitcoin.h \
-  qt/bitcoingui.h \
-  qt/bitcoinunits.h \
+  qt/gthpcoinaddressvalidator.h \
+  qt/gthpcoinamountfield.h \
+  qt/gthpcoin.h \
+  qt/gthpcoingui.h \
+  qt/gthpcoinunits.h \
   qt/clientmodel.h \
   qt/coincontroldialog.h \
   qt/coincontroltreewidget.h \
@@ -252,9 +252,9 @@ RES_ICONS = \
   qt/res/icons/address-book.png \
   qt/res/icons/about.png \
   qt/res/icons/about_qt.png \
-  qt/res/icons/bitcoin.ico \
-  qt/res/icons/bitcoin_testnet.ico \
-  qt/res/icons/bitcoin.png \
+  qt/res/icons/gthpcoin.ico \
+  qt/res/icons/gthpcoin_testnet.ico \
+  qt/res/icons/gthpcoin.png \
   qt/res/icons/chevron.png \
   qt/res/icons/clock1.png \
   qt/res/icons/clock2.png \
@@ -305,13 +305,13 @@ RES_ICONS = \
   qt/res/icons/warning.png \
   qt/res/icons/verify.png
 
-BITCOIN_QT_BASE_CPP = \
+GTHPCOIN_QT_BASE_CPP = \
   qt/bantablemodel.cpp \
-  qt/bitcoin.cpp \
-  qt/bitcoinaddressvalidator.cpp \
-  qt/bitcoinamountfield.cpp \
-  qt/bitcoingui.cpp \
-  qt/bitcoinunits.cpp \
+  qt/gthpcoin.cpp \
+  qt/gthpcoinaddressvalidator.cpp \
+  qt/gthpcoinamountfield.cpp \
+  qt/gthpcoingui.cpp \
+  qt/gthpcoinunits.cpp \
   qt/clientmodel.cpp \
   qt/csvmodelwriter.cpp \
   qt/guiutil.cpp \
@@ -330,9 +330,9 @@ BITCOIN_QT_BASE_CPP = \
   qt/trafficgraphwidget.cpp \
   qt/utilitydialog.cpp
 
-BITCOIN_QT_WINDOWS_CPP = qt/winshutdownmonitor.cpp
+GTHPCOIN_QT_WINDOWS_CPP = qt/winshutdownmonitor.cpp
 
-BITCOIN_QT_WALLET_CPP = \
+GTHPCOIN_QT_WALLET_CPP = \
   qt/addressbookpage.cpp \
   qt/addresstablemodel.cpp \
   qt/askpassphrasedialog.cpp \
@@ -361,17 +361,17 @@ BITCOIN_QT_WALLET_CPP = \
   qt/walletmodeltransaction.cpp \
   qt/walletview.cpp
 
-BITCOIN_QT_WALLET_BIP70_CPP = \
+GTHPCOIN_QT_WALLET_BIP70_CPP = \
   qt/paymentrequestplus.cpp
 
-BITCOIN_QT_CPP = $(BITCOIN_QT_BASE_CPP)
+GTHPCOIN_QT_CPP = $(GTHPCOIN_QT_BASE_CPP)
 if TARGET_WINDOWS
-BITCOIN_QT_CPP += $(BITCOIN_QT_WINDOWS_CPP)
+GTHPCOIN_QT_CPP += $(GTHPCOIN_QT_WINDOWS_CPP)
 endif
 if ENABLE_WALLET
-BITCOIN_QT_CPP += $(BITCOIN_QT_WALLET_CPP)
+GTHPCOIN_QT_CPP += $(GTHPCOIN_QT_WALLET_CPP)
 if ENABLE_BIP70
-BITCOIN_QT_CPP += $(BITCOIN_QT_WALLET_BIP70_CPP)
+GTHPCOIN_QT_CPP += $(GTHPCOIN_QT_WALLET_BIP70_CPP)
 endif # ENABLE_BIP70
 endif # ENABLE_WALLET
 
@@ -379,22 +379,22 @@ RES_IMAGES =
 
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
 
-BITCOIN_RC = qt/res/bitcoin-qt-res.rc
+GTHPCOIN_RC = qt/res/gthpcoin-qt-res.rc
 
-BITCOIN_QT_INCLUDES = -DQT_NO_KEYWORDS
+GTHPCOIN_QT_INCLUDES = -DQT_NO_KEYWORDS
 
-qt_libbitcoinqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+qt_libgthpcoinqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(GTHPCOIN_INCLUDES) $(GTHPCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(QT_DBUS_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
-qt_libbitcoinqt_a_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
-qt_libbitcoinqt_a_OBJCXXFLAGS = $(AM_OBJCXXFLAGS) $(QT_PIE_FLAGS)
+qt_libgthpcoinqt_a_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+qt_libgthpcoinqt_a_OBJCXXFLAGS = $(AM_OBJCXXFLAGS) $(QT_PIE_FLAGS)
 
-qt_libbitcoinqt_a_SOURCES = $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(QT_FORMS_UI) \
+qt_libgthpcoinqt_a_SOURCES = $(GTHPCOIN_QT_CPP) $(GTHPCOIN_QT_H) $(QT_FORMS_UI) \
   $(QT_QRC) $(QT_QRC_LOCALE) $(QT_TS) $(PROTOBUF_PROTO) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES)
 if TARGET_DARWIN
-  qt_libbitcoinqt_a_SOURCES += $(BITCOIN_MM)
+  qt_libgthpcoinqt_a_SOURCES += $(GTHPCOIN_MM)
 endif
 
-nodist_qt_libbitcoinqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
+nodist_qt_libgthpcoinqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
   $(PROTOBUF_H) $(QT_QRC_CPP) $(QT_QRC_LOCALE_CPP)
 
 # forms/foo.h -> forms/ui_foo.h
@@ -403,76 +403,76 @@ QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
 $(QT_MOC): $(QT_FORMS_H)
-$(qt_libbitcoinqt_a_OBJECTS) $(qt_bitcoin_qt_OBJECTS) : | $(QT_MOC)
+$(qt_libgthpcoinqt_a_OBJECTS) $(qt_gthpcoin_qt_OBJECTS) : | $(QT_MOC)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
 $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
-# bitcoin-qt binary #
-qt_bitcoin_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+# gthpcoin-qt binary #
+qt_gthpcoin_qt_CPPFLAGS = $(AM_CPPFLAGS) $(GTHPCOIN_INCLUDES) $(GTHPCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
-qt_bitcoin_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+qt_gthpcoin_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
 
-qt_bitcoin_qt_SOURCES = qt/main.cpp
+qt_gthpcoin_qt_SOURCES = qt/main.cpp
 if TARGET_WINDOWS
-  qt_bitcoin_qt_SOURCES += $(BITCOIN_RC)
+  qt_gthpcoin_qt_SOURCES += $(GTHPCOIN_RC)
 endif
-qt_bitcoin_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
+qt_gthpcoin_qt_LDADD = qt/libgthpcoinqt.a $(LIBGTHPCOIN_SERVER)
 if ENABLE_WALLET
-qt_bitcoin_qt_LDADD += $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
+qt_gthpcoin_qt_LDADD += $(LIBGTHPCOIN_UTIL) $(LIBGTHPCOIN_WALLET)
 endif
 if ENABLE_ZMQ
-qt_bitcoin_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+qt_gthpcoin_qt_LDADD += $(LIBGTHPCOIN_ZMQ) $(ZMQ_LIBS)
 endif
-qt_bitcoin_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CONSENSUS) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
+qt_gthpcoin_qt_LDADD += $(LIBGTHPCOIN_CLI) $(LIBGTHPCOIN_COMMON) $(LIBGTHPCOIN_UTIL) $(LIBGTHPCOIN_CONSENSUS) $(LIBGTHPCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
   $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
 if ENABLE_BIP70
-qt_bitcoin_qt_LDADD += $(SSL_LIBS)
+qt_gthpcoin_qt_LDADD += $(SSL_LIBS)
 else
 if TARGET_WINDOWS
-qt_bitcoin_qt_LDADD += $(SSL_LIBS)
+qt_gthpcoin_qt_LDADD += $(SSL_LIBS)
 endif
 endif
-qt_bitcoin_qt_LDADD += $(CRYPTO_LIBS)
-qt_bitcoin_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_bitcoin_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX
+qt_gthpcoin_qt_LDADD += $(CRYPTO_LIBS)
+qt_gthpcoin_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_gthpcoin_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM=$(QT_TS:.ts=.qm)
 
 SECONDARY: $(QT_QM)
 
-$(srcdir)/qt/bitcoinstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES) $(libbitcoin_zmq_a_SOURCES) $(libbitcoin_consensus_a_SOURCES) $(libbitcoin_util_a_SOURCES)
+$(srcdir)/qt/gthpcoinstrings.cpp: $(libgthpcoin_server_a_SOURCES) $(libgthpcoin_wallet_a_SOURCES) $(libgthpcoin_common_a_SOURCES) $(libgthpcoin_zmq_a_SOURCES) $(libgthpcoin_consensus_a_SOURCES) $(libgthpcoin_util_a_SOURCES)
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) PACKAGE_NAME="$(PACKAGE_NAME)" COPYRIGHT_HOLDERS="$(COPYRIGHT_HOLDERS)" COPYRIGHT_HOLDERS_SUBSTITUTION="$(COPYRIGHT_HOLDERS_SUBSTITUTION)" $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
-translate: $(srcdir)/qt/bitcoinstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_BASE_CPP) qt/bitcoin.cpp $(BITCOIN_QT_WINDOWS_CPP) $(BITCOIN_QT_WALLET_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: $(srcdir)/qt/gthpcoinstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(GTHPCOIN_QT_BASE_CPP) qt/gthpcoin.cpp $(GTHPCOIN_QT_WINDOWS_CPP) $(GTHPCOIN_QT_WALLET_CPP) $(GTHPCOIN_QT_H) $(GTHPCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/bitcoin_en.ts
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/gthpcoin_en.ts
 
 $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 	@test -f $(RCC)
 	@cp -f $< $(@D)/temp_$(<F)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name bitcoin_locale $(@D)/temp_$(<F) | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name gthpcoin_locale $(@D)/temp_$(<F) | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 	@rm $(@D)/temp_$(<F)
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES) $(PROTOBUF_H)
 	@test -f $(RCC)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name bitcoin $< | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name gthpcoin $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
-CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_bitcoin_locale.qrc
+CLEAN_QT = $(nodist_qt_libgthpcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_gthpcoin_locale.qrc
 
 CLEANFILES += $(CLEAN_QT)
 
-bitcoin_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_bitcoin_qt_OBJECTS) qt/bitcoin-qt$(EXEEXT) $(LIBBITCOINQT)
+gthpcoin_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libgthpcoinqt_a_OBJECTS) $(qt_gthpcoin_qt_OBJECTS) qt/gthpcoin-qt$(EXEEXT) $(LIBGTHPCOINQT)
 
-bitcoin_qt : qt/bitcoin-qt$(EXEEXT)
+gthpcoin_qt : qt/gthpcoin-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -f $(UIC)

@@ -1,9 +1,9 @@
-// Copyright (c) 2017 The Bitcoin Core developers
+// Copyright (c) 2017 The Gthpcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_CRYPTO_CHACHA20_H
-#define BITCOIN_CRYPTO_CHACHA20_H
+#ifndef GTHPCOIN_CRYPTO_CHACHA20_H
+#define GTHPCOIN_CRYPTO_CHACHA20_H
 
 #include <stdint.h>
 #include <stdlib.h>
@@ -31,4 +31,4 @@ public:
     void Crypt(const unsigned char* input, unsigned char* output, size_t bytes);
 };
 
-#endif // BITCOIN_CRYPTO_CHACHA20_H
+#endif // GTHPCOIN_CRYPTO_CHACHA20_H

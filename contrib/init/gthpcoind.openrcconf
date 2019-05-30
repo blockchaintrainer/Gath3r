@@ -1,0 +1,33 @@
+# /etc/conf.d/gthpcoind: config file for /etc/init.d/gthpcoind
+
+# Config file location
+#GTHPCOIND_CONFIGFILE="/etc/gthpcoin/gthpcoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $GTHPCOIND_USER)
+#GTHPCOIND_PIDDIR="/var/run/gthpcoind"
+
+# What filename to give the pidfile
+#GTHPCOIND_PIDFILE="${GTHPCOIND_PIDDIR}/gthpcoind.pid"
+
+# Where to write gthpcoind data (be mindful that the blockchain is large)
+#GTHPCOIND_DATADIR="/var/lib/gthpcoind"
+
+# User and group to own gthpcoind process
+#GTHPCOIND_USER="gthpcoin"
+#GTHPCOIND_GROUP="gthpcoin"
+
+# Path to gthpcoind executable
+#GTHPCOIND_BIN="/usr/bin/gthpcoind"
+
+# Nice value to run gthpcoind under
+#GTHPCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#GTHPCOIND_OPTS=""
+
+# The timeout in seconds OpenRC will wait for gthpcoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+GTHPCOIND_SIGTERM_TIMEOUT=60

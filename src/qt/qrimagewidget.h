@@ -1,9 +1,9 @@
-// Copyright (c) 2011-2018 The Bitcoin Core developers
+// Copyright (c) 2011-2018 The Gthpcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_QRIMAGEWIDGET_H
-#define BITCOIN_QT_QRIMAGEWIDGET_H
+#ifndef GTHPCOIN_QT_QRIMAGEWIDGET_H
+#define GTHPCOIN_QT_QRIMAGEWIDGET_H
 
 #include <QImage>
 #include <QLabel>
@@ -42,4 +42,4 @@ private:
     QMenu *contextMenu;
 };
 
-#endif // BITCOIN_QT_QRIMAGEWIDGET_H
+#endif // GTHPCOIN_QT_QRIMAGEWIDGET_H
